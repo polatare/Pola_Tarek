@@ -351,16 +351,16 @@
     margin-bottom: 0.7rem;
   }
   .service-card p { color: var(--muted); font-size: 0.9rem; line-height: 1.7; }
-  #projects{
+  /* #projects{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
     gap: 1.5rem;
     margin-top: 3rem;
-  }
+  } */
   /* PROJECTS */
   .projects-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
     gap: 1.5rem;
     margin-top: 3rem;
   }
@@ -728,12 +728,25 @@
       <h3>Algorithm Design</h3>
       <p>Crafting efficient algorithms and data structures for optimized problem-solving in competitive and real-world scenarios.</p>
     </div>
+    <div class="glass service-card reveal" style="transition-delay:0.3s">
+      <div class="service-icon">📋</div>
+      <h3>Project Management</h3>
+      <p>Managing and coordinating complex projects from conception to completion, ensuring timely delivery and adherence to quality standards.</p>
+    </div>
+    <div class="glass service-card reveal" style="transition-delay:0.3s">
+      <div class="service-icon">💬</div>
+      <h3>Customer Support</h3>
+      <p>Providing responsive and effective customer support to ensure user satisfaction and resolve issues promptly.</p>
+    </div>
   </div>
 </section>
 
 <!-- PROJECTS -->
 <section id="projects">
-      <div class="glass project-card reveal visible">
+  <div class="section-label reveal">Projects</div>
+  <h2 class="section-title reveal">My <span>Projects</span></h2>
+  <div class="projects-grid">
+          <div class="glass project-card reveal visible">
         <div class="project-placeholder">
           <img src="img/Gemini_Generated_Image_g8t67og8t67og8t6.png" alt="">
         </div>
@@ -781,7 +794,7 @@
           <a href="https://teamfprt.github.io/Ameli/" target="_blank" style="color:var(--accent);font-size:0.85rem;text-decoration:none;display:inline-flex;align-items:center;gap:0.3rem;margin-top:0.5rem;">View Project →</a>
         </div>
       </div>
-
+  </div>
 </section>
 
 <!-- CONTACT -->
